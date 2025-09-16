@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+html {
+    font-size: calc(100vw / 1440 * 10);
+    line-height: 1;
+    scroll-behavior: smooth;
+
+    @media (max-width: 550px) {
+        font-size: 10px;
+    }
+
+    @media (max-width: 375px) {
+        font-size: calc(100vw / 375 * 10);
+    }
+}
+
+:root {
+    --primary-color: #000;
+    --secondary-color: #fff;
+}
+
+@font-face {
+  font-family: "Clash Display Bold";
+  src: url("./assets/fonts/ClashDisplay-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DM Sans Bold";
+  src: url("./assets/fonts/DMSans-Bold.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DM Sans Regular";
+  src: url("./assets/fonts/DMSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@theme {
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --color-col-black: #131314; /* Bg Color */
+    --color-col-cream: #fffdd0;
+    --color-col-orange: #cb450c;
+    --color-col-dark: #292a2b; /* Text Black Variant - #1e1f20 */
+
+    --font-clash-b: 'Clash Display Bold', sans-serif;
+    --font-dmsans-b: 'DM Sans Bold', sans-serif;
+    --font-dmsans-r: 'DM Sans Regular', sans-serif;
+
+    /* Breakpoints */
+    --breakpoint-sm: 480px;
+}
+
+
+body {
+  font-family: var(--font-clash-b), sans-serif;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: clip;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
