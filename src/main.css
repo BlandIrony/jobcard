@@ -70,11 +70,17 @@ body {
   font-family: var(--font-dmsans-r), sans-serif;
   background-color: var(--color-col-white);
   color: var(--color-col-white);
+  overflow: hidden;
 }
 
 button {
   cursor: pointer;
+  /* cursor: url('./assets/icons/PhHandPointingFill.svg'), auto; */
   transition: transform .2s ease-in-out;
+}
+
+.card__inner {
+  cursor: grab;
 }
 
 button:hover {
