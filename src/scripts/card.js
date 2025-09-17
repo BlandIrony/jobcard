@@ -1,9 +1,10 @@
-export class Item {
+export class Card {
     // DOM elements
     DOM = {
         // main element
-        el: null
+        el: null,
         // Other Elements
+        innerCard: null,
     }
 
     /**
@@ -12,5 +13,6 @@ export class Item {
      */
     constructor(DOM_el) {
         this.DOM.el = DOM_el;
+        this.innerCard = this.DOM.el.querySelectorAll('.card__inner')
     }
 }

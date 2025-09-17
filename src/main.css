@@ -44,8 +44,17 @@ html {
     --primary-color: #000;
     --secondary-color: #fff;
     --color-col-black: #131314; /* Bg Color */
+    --color-col-white: #f4f4f4;
     --color-col-cream: #fffdd0;
     --color-col-orange: #cb450c;
+    --color-accent-red: #f14f1a;
+    --color-accent-green: #49ac4f;
+    --color-accent-orange: #f04d19;
+    --color-accent-blue: #00a2d7;
+    --color-accent-purple: #998ae3;
+    --color-accent-pink: #ee99b4;
+    --color-accent-yellow: #f7af2e;
+    --color-accent-light-blue: #5137e7;
     --color-col-dark: #292a2b; /* Text Black Variant - #1e1f20 */
 
     --font-clash-b: 'Clash Display Bold', sans-serif;
@@ -58,9 +67,18 @@ html {
 
 
 body {
-  font-family: var(--font-clash-b), sans-serif;
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
+  font-family: var(--font-dmsans-r), sans-serif;
+  background-color: var(--color-col-white);
+  color: var(--color-col-white);
+}
+
+button {
+  cursor: pointer;
+  transition: transform .2s ease-in-out;
+}
+
+button:hover {
+  transform: scale(.95);
 }
 
 html.lenis,

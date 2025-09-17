@@ -2,15 +2,284 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/folder.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTWJ - Template</title>
+    <title>Job Card | 🗂️</title>
     <link rel="stylesheet" href="src/main.css" />
   </head>
   <body>
-    <div id="app">
-      <h1 class="text-6xl font-bold underline">Hello World</h1>
-    </div>
+    <main id="app">
+      <section class="h-screen w-full flex items-center justify-center">
+        <div class="card__wrapper perspective-[1000px] transform-3d relative w-[45rem] max-h-fit  flex flex-col items-center">
+          <div class="card 1 absolute -top-[10rem] will-change-transform">
+            <div class="card__inner h-[20rem] w-[45rem] flex flex-col justify-between space-y-[2rem] rounded-[3.5rem] bg-accent-blue p-[3rem] shadow-md">
+              <div class="flex justify-between items-center">
+                <span class="inline-block text-[1.25rem] uppercase text-gray-300">
+                  Intriguer
+                </span>
+                <span class="inline-flex items-center gap-2.5 text-[1.25rem] text-gray-300">
+                  <span class="inline-block">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-[1.5rem]" viewBox="0 0 512 512"><path d="M470 124.837l-98.443-81.78-27.814 32.931 98.442 81.769L470 124.837zM167.192 74.919L139.366 42 42 124.837l27.814 32.919 97.378-82.837zm99.509 97.709H234.6v127.446l101.649 60.539L352.3 334.06l-85.6-49.917V172.628zM256 87.665c-107 0-192.601 86.021-192.601 191.166C63.399 383.98 149 470 256 470c105.936 0 192.601-86.02 192.601-191.169 0-105.144-86.665-191.166-192.601-191.166zm0 339.855c-82.393 0-149.8-66.906-149.8-148.688 0-81.777 67.407-148.684 149.8-148.684 82.394 0 149.8 66.906 149.8 148.684 0 82.839-67.406 148.688-149.8 148.688z" fill="currentColor"/></svg>
+                  </span>
+                  <span class="inline-block">
+                    7:15PM
+                  </span>
+                </span>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="h-[5rem] w-[5rem] rounded-full">
+                  <img class="h-full w-full object-cover rounded-[inherit]" src="./src/assets/images/m.jpg" alt="user avatar">
+                </div>
+                <div class="flex flex-col gap-2">
+                  <h3 class="font-dmsans-b text-[1.85rem]">
+                    Professor Moriati
+                  </h3>
+                  <div class="flex items-center gap-2.5">
+                    <span class="h-2.5 w-2.5 rounded-full bg-green-400"></span>
+                    <span class="text-[1.25rem] text-gray-300">
+                      Available for work
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex gap-5">
+                <button class="w-1/2 flex justify-center items-center gap-2.5 py-[1.25rem] px-[2rem] rounded-[1rem] bg-col-dark">
+                  <span class="inline-block">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-[1.5rem]" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192s192-86 192-192Z"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 176v160m80-80H176"/></svg>
+                  </span>
+                  <span class="inline-block text-[1.45rem]">
+                    Hire Me
+                  </span>
+                </button>
+                <button class="w-1/2 flex justify-center items-center gap-2.5 py-[1.25rem] px-[2rem] rounded-[1rem] bg-col-orange">
+                  <span class="inline-block">
+                   <svg xmlns="http://www.w3.org/2000/svg" class="w-[1.5rem]" viewBox="0 0 24 24"><path fill="currentColor" d="M22.265 2.428a2.05 2.05 0 0 0-2.078-.324L2.266 9.339a2.043 2.043 0 0 0 .104 3.818l3.625 1.261l2.02 6.682a1 1 0 0 0 .119.252c.008.012.019.02.027.033a1 1 0 0 0 .211.215l.07.05a1 1 0 0 0 .31.136l.013.001l.006.003a1 1 0 0 0 .203.02l.018-.003a1 1 0 0 0 .301-.052q.033-.014.064-.03a1 1 0 0 0 .205-.114l.152-.129l2.702-2.983l4.03 3.122a2.02 2.02 0 0 0 1.241.427a2.054 2.054 0 0 0 2.008-1.633l3.263-16.017a2.03 2.03 0 0 0-.693-1.97M9.37 14.736a1 1 0 0 0-.272.506l-.31 1.504l-.784-2.593l4.065-2.117Zm8.302 5.304l-4.763-3.69a1 1 0 0 0-1.353.12l-.866.955l.306-1.487l7.083-7.083a1 1 0 0 0-1.169-1.593L6.745 12.554L3.02 11.191L20.999 4Z"/></svg>
+                  </span>
+                  <span class="inline-block text-[1.45rem]">
+                    Send Telegraph
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card 2 absolute -top-[10rem] will-change-transform">
+            <div class="card__inner h-[20rem] w-[45rem] flex flex-col justify-between space-y-[2rem] rounded-[3.5rem] bg-accent-red p-[3rem] shadow-md">
+              <div class="flex justify-between items-center">
+                <span class="inline-block text-[1.25rem] uppercase text-gray-300">
+                  Detective
+                </span>
+                <span class="inline-flex items-center gap-2.5 text-[1.25rem] text-gray-300">
+                  <span class="inline-block">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-[1.5rem]" viewBox="0 0 512 512"><path d="M470 124.837l-98.443-81.78-27.814 32.931 98.442 81.769L470 124.837zM167.192 74.919L139.366 42 42 124.837l27.814 32.919 97.378-82.837zm99.509 97.709H234.6v127.446l101.649 60.539L352.3 334.06l-85.6-49.917V172.628zM256 87.665c-107 0-192.601 86.021-192.601 191.166C63.399 383.98 149 470 256 470c105.936 0 192.601-86.02 192.601-191.169 0-105.144-86.665-191.166-192.601-191.166zm0 339.855c-82.393 0-149.8-66.906-149.8-148.688 0-81.777 67.407-148.684 149.8-148.684 82.394 0 149.8 66.906 149.8 148.684 0 82.839-67.406 148.688-149.8 148.688z" fill="currentColor"/></svg>
+                  </span>
+                  <span class="inline-block">
+                    7:15PM
+                  </span>
+                </span>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="h-[5rem] w-[5rem] rounded-full">
+                  <img class="h-full w-full object-cover rounded-[inherit]" src="./src/assets/images/holmes.jpg" alt="user avatar">
+                </div>
+                <div class="flex flex-col gap-2">
+                  <h3 class="font-dmsans-b text-[1.85rem]">
+                    Sherlock Holmes
+                  </h3>
+                  <div class="flex items-center gap-2.5">
+                    <span class="h-2.5 w-2.5 rounded-full bg-green-400"></span>
+                    <span class="text-[1.25rem] text-gray-300">
+                      Available for work
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex gap-5">
+                <button class="w-1/2 flex justify-center items-center gap-2.5 py-[1.25rem] px-[2rem] rounded-[1rem] bg-col-dark">
+                  <span class="inline-block">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-[1.5rem]" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192s192-86 192-192Z"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 176v160m80-80H176"/></svg>
+                  </span>
+                  <span class="inline-block text-[1.45rem]">
+                    Hire Me
+                  </span>
+                </button>
+                <button class="w-1/2 flex justify-center items-center gap-2.5 py-[1.25rem] px-[2rem] rounded-[1rem] bg-col-orange">
+                  <span class="inline-block">
+                   <svg xmlns="http://www.w3.org/2000/svg" class="w-[1.5rem]" viewBox="0 0 24 24"><path fill="currentColor" d="M22.265 2.428a2.05 2.05 0 0 0-2.078-.324L2.266 9.339a2.043 2.043 0 0 0 .104 3.818l3.625 1.261l2.02 6.682a1 1 0 0 0 .119.252c.008.012.019.02.027.033a1 1 0 0 0 .211.215l.07.05a1 1 0 0 0 .31.136l.013.001l.006.003a1 1 0 0 0 .203.02l.018-.003a1 1 0 0 0 .301-.052q.033-.014.064-.03a1 1 0 0 0 .205-.114l.152-.129l2.702-2.983l4.03 3.122a2.02 2.02 0 0 0 1.241.427a2.054 2.054 0 0 0 2.008-1.633l3.263-16.017a2.03 2.03 0 0 0-.693-1.97M9.37 14.736a1 1 0 0 0-.272.506l-.31 1.504l-.784-2.593l4.065-2.117Zm8.302 5.304l-4.763-3.69a1 1 0 0 0-1.353.12l-.866.955l.306-1.487l7.083-7.083a1 1 0 0 0-1.169-1.593L6.745 12.554L3.02 11.191L20.999 4Z"/></svg>
+                  </span>
+                  <span class="inline-block text-[1.45rem]">
+                    Send Telegraph
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card 3 absolute -top-[10rem] will-change-transform">
+            <div class="card__inner h-[20rem] w-[45rem] flex flex-col justify-between space-y-[2rem] rounded-[3.5rem] bg-accent-green p-[3rem] shadow-md">
+              <div class="flex justify-between items-center">
+                <span class="inline-block text-[1.25rem] uppercase text-gray-300">
+                  Detective Assistant
+                </span>
+                <span class="inline-flex items-center gap-2.5 text-[1.25rem] text-gray-300">
+                  <span class="inline-block">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-[1.5rem]" viewBox="0 0 512 512"><path d="M470 124.837l-98.443-81.78-27.814 32.931 98.442 81.769L470 124.837zM167.192 74.919L139.366 42 42 124.837l27.814 32.919 97.378-82.837zm99.509 97.709H234.6v127.446l101.649 60.539L352.3 334.06l-85.6-49.917V172.628zM256 87.665c-107 0-192.601 86.021-192.601 191.166C63.399 383.98 149 470 256 470c105.936 0 192.601-86.02 192.601-191.169 0-105.144-86.665-191.166-192.601-191.166zm0 339.855c-82.393 0-149.8-66.906-149.8-148.688 0-81.777 67.407-148.684 149.8-148.684 82.394 0 149.8 66.906 149.8 148.684 0 82.839-67.406 148.688-149.8 148.688z" fill="currentColor"/></svg>
+                  </span>
+                  <span class="inline-block">
+                    7:15PM
+                  </span>
+                </span>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="h-[5rem] w-[5rem] rounded-full">
+                  <img class="h-full w-full object-cover rounded-[inherit]" src="./src/assets/images/watson.jpg" alt="user avatar">
+                </div>
+                <div class="flex flex-col gap-2">
+                  <h3 class="font-dmsans-b text-[1.85rem]">
+                    Dr. Watson
+                  </h3>
+                  <div class="flex items-center gap-2.5">
+                    <span class="h-2.5 w-2.5 rounded-full bg-green-400"></span>
+                    <span class="text-[1.25rem] text-gray-300">
+                      Available for work
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex gap-5">
+                <button class="w-1/2 flex justify-center items-center gap-2.5 py-[1.25rem] px-[2rem] rounded-[1rem] bg-col-dark">
+                  <span class="inline-block">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-[1.5rem]" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192s192-86 192-192Z"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 176v160m80-80H176"/></svg>
+                  </span>
+                  <span class="inline-block text-[1.45rem]">
+                    Hire Me
+                  </span>
+                </button>
+                <button class="w-1/2 flex justify-center items-center gap-2.5 py-[1.25rem] px-[2rem] rounded-[1rem] bg-col-orange">
+                  <span class="inline-block">
+                   <svg xmlns="http://www.w3.org/2000/svg" class="w-[1.5rem]" viewBox="0 0 24 24"><path fill="currentColor" d="M22.265 2.428a2.05 2.05 0 0 0-2.078-.324L2.266 9.339a2.043 2.043 0 0 0 .104 3.818l3.625 1.261l2.02 6.682a1 1 0 0 0 .119.252c.008.012.019.02.027.033a1 1 0 0 0 .211.215l.07.05a1 1 0 0 0 .31.136l.013.001l.006.003a1 1 0 0 0 .203.02l.018-.003a1 1 0 0 0 .301-.052q.033-.014.064-.03a1 1 0 0 0 .205-.114l.152-.129l2.702-2.983l4.03 3.122a2.02 2.02 0 0 0 1.241.427a2.054 2.054 0 0 0 2.008-1.633l3.263-16.017a2.03 2.03 0 0 0-.693-1.97M9.37 14.736a1 1 0 0 0-.272.506l-.31 1.504l-.784-2.593l4.065-2.117Zm8.302 5.304l-4.763-3.69a1 1 0 0 0-1.353.12l-.866.955l.306-1.487l7.083-7.083a1 1 0 0 0-1.169-1.593L6.745 12.554L3.02 11.191L20.999 4Z"/></svg>
+                  </span>
+                  <span class="inline-block text-[1.45rem]">
+                    Send Telegraph
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card 4 absolute -top-[10rem] will-change-transform">
+            <div class="card__inner h-[20rem] w-[45rem] flex flex-col justify-between space-y-[2rem] rounded-[3.5rem] bg-accent-purple p-[3rem] shadow-md">
+              <div class="flex justify-between items-center">
+                <span class="inline-block text-[1.25rem] uppercase text-gray-300">
+                  Serial Killer
+                </span>
+                <span class="inline-flex items-center gap-2.5 text-[1.25rem] text-gray-300">
+                  <span class="inline-block">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-[1.5rem]" viewBox="0 0 512 512"><path d="M470 124.837l-98.443-81.78-27.814 32.931 98.442 81.769L470 124.837zM167.192 74.919L139.366 42 42 124.837l27.814 32.919 97.378-82.837zm99.509 97.709H234.6v127.446l101.649 60.539L352.3 334.06l-85.6-49.917V172.628zM256 87.665c-107 0-192.601 86.021-192.601 191.166C63.399 383.98 149 470 256 470c105.936 0 192.601-86.02 192.601-191.169 0-105.144-86.665-191.166-192.601-191.166zm0 339.855c-82.393 0-149.8-66.906-149.8-148.688 0-81.777 67.407-148.684 149.8-148.684 82.394 0 149.8 66.906 149.8 148.684 0 82.839-67.406 148.688-149.8 148.688z" fill="currentColor"/></svg>
+                  </span>
+                  <span class="inline-block">
+                    7:15PM
+                  </span>
+                </span>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="h-[5rem] w-[5rem] rounded-full">
+                  <img class="h-full w-full object-cover rounded-[inherit]" src="./src/assets/images/jdr.jpg" alt="user avatar">
+                </div>
+                <div class="flex flex-col gap-2">
+                  <h3 class="font-dmsans-b text-[1.85rem]">
+                    Jack the Ripper
+                  </h3>
+                  <div class="flex items-center gap-2.5">
+                    <span class="h-2.5 w-2.5 rounded-full bg-green-400"></span>
+                    <span class="text-[1.25rem] text-gray-300">
+                      Available for work
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex gap-5">
+                <button class="w-1/2 flex justify-center items-center gap-2.5 py-[1.25rem] px-[2rem] rounded-[1rem] bg-col-dark">
+                  <span class="inline-block">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-[1.5rem]" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192s192-86 192-192Z"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 176v160m80-80H176"/></svg>
+                  </span>
+                  <span class="inline-block text-[1.45rem]">
+                    Hire Me
+                  </span>
+                </button>
+                <button class="w-1/2 flex justify-center items-center gap-2.5 py-[1.25rem] px-[2rem] rounded-[1rem] bg-col-orange">
+                  <span class="inline-block">
+                   <svg xmlns="http://www.w3.org/2000/svg" class="w-[1.5rem]" viewBox="0 0 24 24"><path fill="currentColor" d="M22.265 2.428a2.05 2.05 0 0 0-2.078-.324L2.266 9.339a2.043 2.043 0 0 0 .104 3.818l3.625 1.261l2.02 6.682a1 1 0 0 0 .119.252c.008.012.019.02.027.033a1 1 0 0 0 .211.215l.07.05a1 1 0 0 0 .31.136l.013.001l.006.003a1 1 0 0 0 .203.02l.018-.003a1 1 0 0 0 .301-.052q.033-.014.064-.03a1 1 0 0 0 .205-.114l.152-.129l2.702-2.983l4.03 3.122a2.02 2.02 0 0 0 1.241.427a2.054 2.054 0 0 0 2.008-1.633l3.263-16.017a2.03 2.03 0 0 0-.693-1.97M9.37 14.736a1 1 0 0 0-.272.506l-.31 1.504l-.784-2.593l4.065-2.117Zm8.302 5.304l-4.763-3.69a1 1 0 0 0-1.353.12l-.866.955l.306-1.487l7.083-7.083a1 1 0 0 0-1.169-1.593L6.745 12.554L3.02 11.191L20.999 4Z"/></svg>
+                  </span>
+                  <span class="inline-block text-[1.45rem]">
+                    Send Telegraph
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card 5 absolute -top-[10rem] will-change-transform">
+            <div class="card__inner h-[20rem] w-[45rem] flex flex-col justify-between space-y-[2rem] rounded-[3.5rem] bg-col-black p-[3rem] shadow-md">
+              <div class="flex justify-between items-center">
+                <span class="inline-block text-[1.25rem] uppercase text-gray-300">
+                  Batman's Nemesis
+                </span>
+                <span class="inline-flex items-center gap-2.5 text-[1.25rem] text-gray-300">
+                  <span class="inline-block">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-[1.5rem]" viewBox="0 0 512 512"><path d="M470 124.837l-98.443-81.78-27.814 32.931 98.442 81.769L470 124.837zM167.192 74.919L139.366 42 42 124.837l27.814 32.919 97.378-82.837zm99.509 97.709H234.6v127.446l101.649 60.539L352.3 334.06l-85.6-49.917V172.628zM256 87.665c-107 0-192.601 86.021-192.601 191.166C63.399 383.98 149 470 256 470c105.936 0 192.601-86.02 192.601-191.169 0-105.144-86.665-191.166-192.601-191.166zm0 339.855c-82.393 0-149.8-66.906-149.8-148.688 0-81.777 67.407-148.684 149.8-148.684 82.394 0 149.8 66.906 149.8 148.684 0 82.839-67.406 148.688-149.8 148.688z" fill="currentColor"/></svg>
+                  </span>
+                  <span class="inline-block">
+                    7:15PM
+                  </span>
+                </span>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="h-[5rem] w-[5rem] rounded-full">
+                  <img class="h-full w-full object-cover rounded-[inherit]" src="./src/assets/images/joker.jpg" alt="user avatar">
+                </div>
+                <div class="flex flex-col gap-2">
+                  <h3 class="font-dmsans-b text-[1.85rem]">
+                    The Joker
+                  </h3>
+                  <div class="flex items-center gap-2.5">
+                    <span class="h-2.5 w-2.5 rounded-full bg-green-400"></span>
+                    <span class="text-[1.25rem] text-gray-300">
+                      Available for work
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex gap-5">
+                <button class="w-1/2 flex justify-center items-center gap-2.5 py-[1.25rem] px-[2rem] rounded-[1rem] bg-col-dark">
+                  <span class="inline-block">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-[1.5rem]" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192s192-86 192-192Z"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 176v160m80-80H176"/></svg>
+                  </span>
+                  <span class="inline-block text-[1.45rem]">
+                    Hire Me
+                  </span>
+                </button>
+                <button class="w-1/2 flex justify-center items-center gap-2.5 py-[1.25rem] px-[2rem] rounded-[1rem] bg-col-orange">
+                  <span class="inline-block">
+                   <svg xmlns="http://www.w3.org/2000/svg" class="w-[1.5rem]" viewBox="0 0 24 24"><path fill="currentColor" d="M22.265 2.428a2.05 2.05 0 0 0-2.078-.324L2.266 9.339a2.043 2.043 0 0 0 .104 3.818l3.625 1.261l2.02 6.682a1 1 0 0 0 .119.252c.008.012.019.02.027.033a1 1 0 0 0 .211.215l.07.05a1 1 0 0 0 .31.136l.013.001l.006.003a1 1 0 0 0 .203.02l.018-.003a1 1 0 0 0 .301-.052q.033-.014.064-.03a1 1 0 0 0 .205-.114l.152-.129l2.702-2.983l4.03 3.122a2.02 2.02 0 0 0 1.241.427a2.054 2.054 0 0 0 2.008-1.633l3.263-16.017a2.03 2.03 0 0 0-.693-1.97M9.37 14.736a1 1 0 0 0-.272.506l-.31 1.504l-.784-2.593l4.065-2.117Zm8.302 5.304l-4.763-3.69a1 1 0 0 0-1.353.12l-.866.955l.306-1.487l7.083-7.083a1 1 0 0 0-1.169-1.593L6.745 12.554L3.02 11.191L20.999 4Z"/></svg>
+                  </span>
+                  <span class="inline-block text-[1.45rem]">
+                    Send Telegraph
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-[4rem]">
+            <button data-shuffle class="absolute left-1/2 -bottom-[15rem] -translate-x-1/2 flex justify-center items-center gap-2.5 py-[1.5rem] px-[2rem] rounded-full bg-col-black">
+              <span class="inline-block">
+               <svg xmlns="http://www.w3.org/2000/svg" class="w-[1.5rem]" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m18 4l3 3l-3 3m0 10l3-3l-3-3"/><path d="M3 7h3a5 5 0 0 1 5 5a5 5 0 0 0 5 5h5m0-10h-5a4.98 4.98 0 0 0-3 1m-4 8a5 5 0 0 1-3 1H3"/></g></svg>
+              </span>
+              <span class="inline-block text-[1.45rem]">
+                Shuffle
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
