@@ -3,8 +3,9 @@ import { preloadImages } from "./scripts/utils.js";
 import Lenis from "lenis";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Draggable, InertiaPlugin } from "gsap/all";
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, Draggable, InertiaPlugin);
 
 // Initialize a new Lenis instance for smooth scrolling
 const lenis = new Lenis();
@@ -34,7 +35,8 @@ let isAnimating = false
 
 class Home {
   constructor() {
-    this.initAnimation()
+    this.initAnimation();
+    // this.initiateDraggable();
 
     shuffleBtn.addEventListener('click', () => {
       this.shuffleCards()
